@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+
+nav a:link{
+  text-decoration:none;
+  margin: 5px;
+}
+.tictactoeGameHolder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tttContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+
+.tictactoeContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: row;
+}
+
+.playerColumn {
+  width: 33vw;
+  height: auto;
+}
+
+.gameBoard {
+  width: 33vw;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.topRow {
+  display: flex;
+}
+.midRow {
+  display: flex;
+}
+.bottomRow {
+  display: flex;
+}
+
+.top0{
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.top1{
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.top2{
+  border-bottom: solid 1px black;
+}
+
+.mid0{
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.mid1{
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.mid2{
+  border-bottom: solid 1px black;
+}
+
+.bot{
+  border-right: solid 1px black;
+}
+
+@media only screen and (max-width: 700px){
+  .tictactoeContainer{
+    flex-direction: column;
+  }
+}
+
+.resetGame {
+  border: solid 1px darkgray;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+

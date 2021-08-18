@@ -5,7 +5,7 @@ export const gameSlice = createSlice ({
     initialState: {
         player: '',
         playerAvatar: '',
-        opponent:'',
+        opponent:{},
         winState: false
     },
     reducers: {

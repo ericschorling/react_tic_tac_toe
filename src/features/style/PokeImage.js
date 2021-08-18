@@ -1,12 +1,15 @@
 import React from 'react'
 import { useGetPokemonByNameQuery } from '../../services/pokemon'
+import { useDispatch } from 'react-redux'
+import { setOpponent} from '../game/gameSlice'
 
 
 export const PokeImage =  () =>{
     const randomPokeImage = Math.floor((Math.random() *100) +1)
+    const dispatch = useDispatch()
     const { data, error, isLoading} = useGetPokemonByNameQuery(randomPokeImage)
-    // let imageUrl = setImage()
-    // console.log(imageUrl)
+    dispatch(setOpponent(data))
+
     return (
         <>
             {error ? (
